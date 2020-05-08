@@ -1,3 +1,9 @@
+set -o vi
+
+# aliases
+
+unalias -a
+alias c=clear
 alias ll="ls -la"
 
-
+export PATH=$HOME/repos/gitlab.com/binarychaostv/dotfiles/scripts:$PATH

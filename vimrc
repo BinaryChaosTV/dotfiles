@@ -5,10 +5,11 @@
 set number " Turn on line numbers 
 set background=dark " Makes the background dark
 set textwidth=73 " Number of characters on a single line
+set hls " Highlights the search
 syntax enable
 
-colorscheme slate
-" colorscheme pablo
+" colorscheme slate
+colorscheme pablo
 
 " Vim navigation
 
@@ -16,6 +17,7 @@ set tabstop=2 " Amount of spaces when you press TAB
 set softtabstop=2 " Erases all white spaces together
 set smartindent " Indent when you write code in Vim
 set autoindent
+set ic " Ignore case sensitive searches
 
 " No arrow keys
 noremap <up> :echoerr "Umm, use k instead"<CR>
