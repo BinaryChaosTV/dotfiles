@@ -37,7 +37,8 @@ set nowritebackup
 set viminfo='20,<1000,s1000 "Prevents truncated yanks, deletes, etc.
 set expandtab " Turns tabs into white spaces
 
-
+" File types
+au bufnewfile,bufRead bashconfig set filetype=sh
 
 
 

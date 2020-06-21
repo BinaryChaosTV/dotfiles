@@ -5,5 +5,6 @@ set -o vi
 unalias -a
 alias c=clear
 alias ll="ls -la"
+alias vi=vim
 
 export PATH=$HOME/repos/gitlab.com/binarychaostv/dotfiles/scripts:$PATH
