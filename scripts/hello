@@ -1,2 +1,5 @@
-#!/bin/bash
-echo "hello world"
+#!/bin/sh
+
+# A simple Hello World Script
+
+echo "Hello World"
