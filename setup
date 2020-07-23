@@ -7,3 +7,7 @@ ls -l $HOME/.vimrc
 
 ln -sf $PWD/tmux.conf $HOME/.tmux.conf
 ls -l $HOME/.tmux.conf
+
+sudo cp -RuH  $PWD/fonts /usr/share/
+sudo chown -R root:root usr/share/fonts 
+sudo chmod -R u=rwx,g=rx,o=rx usr/share/fonts 
