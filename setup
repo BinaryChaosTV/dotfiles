@@ -1,13 +1,17 @@
-#!/bin/bash
-ln -sf $PWD/bashconfig $HOME/.bash_aliases
-ls -l $HOME/.bash_aliases
+#!/bin/sh
+set -e
 
-ln -sf $PWD/vimrc $HOME/.vimrc
-ls -l $HOME/.vimrc
-
-ln -sf $PWD/tmux.conf $HOME/.tmux.conf
-ls -l $HOME/.tmux.conf
+ln -sf "$PWD/.bashrc" "$HOME/.bashrc"
+ln -sf "$PWD/.profile" "$HOME/.profile"
+ln -sf "$PWD/.profile" "$HOME/.bash_profile"
+ln -sf "$PWD/scripts" "$HOME/Scripts"
+ln -sf "$PWD/.inputrc" "$HOME/.inputrc"
 
 sudo cp -Rn  $PWD/fonts /usr/share/
-sudo chown -R root:root usr/share/fonts 
-sudo chmod -R u=rwx,g=rx,o=rx usr/share/fonts 
+sudo chown -R root:root /usr/share/fonts 
+sudo chmod -R u=rwx,g=rx,o=rx /usr/share/fonts 
+
+for i in vim tmux; do
+  cd $i && sh setup
+  cd -
+done
