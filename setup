@@ -2,8 +2,6 @@
 set -e
 
 ln -sf "$PWD/.bashrc" "$HOME/.bashrc"
-ln -sf "$PWD/.profile" "$HOME/.profile"
-ln -sf "$PWD/.profile" "$HOME/.bash_profile"
 ln -sf "$PWD/scripts" "$HOME/Scripts"
 ln -sf "$PWD/.inputrc" "$HOME/.inputrc"
 
