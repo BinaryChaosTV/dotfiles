@@ -5,10 +5,6 @@ ln -sf "$PWD/.bashrc" "$HOME/.bashrc"
 ln -sf "$PWD/scripts" "$HOME/Scripts"
 ln -sf "$PWD/.inputrc" "$HOME/.inputrc"
 
-sudo cp -Rn  $PWD/fonts /usr/share/
-sudo chown -R root:root /usr/share/fonts 
-sudo chmod -R u=rwx,g=rx,o=rx /usr/share/fonts 
-
 for i in vim tmux; do
   cd $i && sh setup
   cd -
