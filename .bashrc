@@ -19,6 +19,7 @@ export GITUSER="$USER"
 export GHREPO="$HOME/github/$GITUSER"
 export DOTFILES="$GHREPO/dotfiles"
 export SCRIPTS="$DOTFILES/scripts"
+PATH="$SCRIPTS:$PATH"
 
 # ------------------------------ COMPLETION ------------------------------
 _have gh && . <(gh completion -s bash)
@@ -117,7 +118,6 @@ alias l='ls -CF'
 alias dot='cd $DOTFILES'
 alias scripts='cd $SCRIPTS'
 alias chmox='chmod +x'
-alias top=bashtop
 alias grep="grep -P"
 
 _have vim && alias vi=vim

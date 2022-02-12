@@ -1,9 +1,9 @@
 " ------------------------------ VIMRC ------------------------------
 
-" ------------------------------ PATHOGEN ------------------------------
+" ------------------------------ PATHOGEN ---------------------------
 execute pathogen#infect()
 
-" ------------------------------ VISUAL ------------------------------
+" ------------------------------ VISUAL -----------------------------
 
 syntax enable
 
@@ -23,11 +23,12 @@ set linebreak
 set background=dark
 
 " Set the colorscheme
+let g:solarized_termcolors=256
 " colorscheme slate
 colorscheme solarized
 
 
-" ------------------------------ NAVIGATION ------------------------------
+" ------------------------------ NAVIGATION ---------------------------
 
 " Automatically indent new lines
 set autoindent
@@ -91,9 +92,7 @@ set icon
 set viminfo='20,<1000,s1000 "Prevents truncated yanks, deletes, etc.
 
 " File types
-au bufnewfile,bufRead bashconfig set filetype=sh
 filetype plugin indent on
-
 
 
 
