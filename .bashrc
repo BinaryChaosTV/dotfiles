@@ -108,7 +108,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # ------------------------------ ALIASES ------------------------------
-unalias -a
+# unalias -a
 alias c='printf "\e[H\e[2J"'
 alias clear='printf "\e[H\e[2J"'
 alias grep="grep -P"
