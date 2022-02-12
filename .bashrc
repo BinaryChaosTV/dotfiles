@@ -14,7 +14,9 @@ _have()      { type "$1" &>/dev/null; }
 _source_if() { [[ -r "$1" ]] && source "$1"; }
 
 # ------------------------------ VARIABLES ------------------------------
-export GHREPO="$HOME/github/binarychaostv"
+export USER="${USER:-$(whoami)}"
+export GITUSER="$USER"
+export GHREPO="$HOME/github/$GITUSER"
 export DOTFILES="$GHREPO/dotfiles"
 export SCRIPTS="$DOTFILES/scripts"
 
