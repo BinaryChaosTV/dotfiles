@@ -19,7 +19,12 @@ export GITUSER="$USER"
 export GHREPO="$HOME/github/$GITUSER"
 export DOTFILES="$GHREPO/dotfiles"
 export SCRIPTS="$DOTFILES/scripts"
-PATH="$SCRIPTS:$PATH"
+
+# ------------------------------ PATH -----------------------------------
+PATH=$PATH:\
+$SCRIPTS:\
+$HOME/.local/bin
+
 
 # ------------------------------ COMPLETION ------------------------------
 _have gh && . <(gh completion -s bash)

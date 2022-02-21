@@ -23,10 +23,9 @@ set linebreak
 set background=dark
 
 " Set the colorscheme
-let g:solarized_termcolors=256
+set t_Co=256
 " colorscheme slate
 colorscheme solarized
-
 
 " ------------------------------ NAVIGATION ---------------------------
 
@@ -60,6 +59,9 @@ set expandtab
 set norelativenumber
 
 " ------------------------------ KEY REMAPS ------------------------------
+
+" Change background colour to Solarized
+call togglebg#map("<F5>")
 
 " No arrow keys
 " noremap <up> :echoerr "Umm, use k instead"<CR>
