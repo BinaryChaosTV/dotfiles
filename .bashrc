@@ -122,6 +122,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias dot='cd $DOTFILES'
 alias scripts='cd $SCRIPTS'
+alias cse='cd $GHREPO'
 alias chmox='chmod +x'
 alias grep="grep -P"
 
