@@ -19,8 +19,9 @@ export GITUSER="$USER"
 export GHREPO="$HOME/github/$GITUSER"
 export DOTFILES="$GHREPO/dotfiles"
 export SCRIPTS="$DOTFILES/scripts"
+export ZETTELKASTEN="$GHREPO/zet/"
 
-# ------------------------------ PATH -----------------------------------
+ #------------------------------ PATH -----------------------------------
 PATH=$PATH:\
 $SCRIPTS:\
 $HOME/.local/bin
@@ -28,6 +29,7 @@ $HOME/.local/bin
 
 # ------------------------------ COMPLETION ------------------------------
 _have gh && . <(gh completion -s bash)
+complete -C zet zet
 
 # ------------------------------ HISTORY ------------------------------
 # don't put duplicate lines or lines starting with space in the history.
@@ -125,6 +127,7 @@ alias scripts='cd $SCRIPTS'
 alias cse='cd $GHREPO'
 alias chmox='chmod +x'
 alias grep="grep -P"
+alias zk='cd $ZETTELKASTEN'
 
 _have vim && alias vi=vim
 
