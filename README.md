@@ -6,4 +6,4 @@ A personal repo of my dotfiles. Use as you see fit. There's nothing absolutely i
 
 To install, you can simply create a directory of your choice and pull this project using the following command:
 
-`git clone https://github.com/controlshifted/dotfiles.git`
+`git clone https://github.com/gabrielmontplaisir/dotfiles.git`
