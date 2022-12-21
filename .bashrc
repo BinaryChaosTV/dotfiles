@@ -24,12 +24,14 @@ export ZETTELKASTEN="$GHREPO/zet/"
  #------------------------------ PATH -----------------------------------
 PATH=$PATH:\
 $SCRIPTS:\
-$HOME/.local/bin
+$HOME/.local/bin:\
+/usr/local/go/bin
 
 
 # ------------------------------ COMPLETION ------------------------------
 _have gh && . <(gh completion -s bash)
 complete -C zet zet
+complete -C pomo pomo
 
 # ------------------------------ HISTORY ------------------------------
 # don't put duplicate lines or lines starting with space in the history.
@@ -37,7 +39,6 @@ complete -C zet zet
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
-set -o vi
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
@@ -124,10 +125,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias dot='cd $DOTFILES'
 alias scripts='cd $SCRIPTS'
-alias cse='cd $GHREPO'
+alias gm='cd $GHREPO'
 alias chmox='chmod +x'
 alias grep="grep -P"
 alias zk='cd $ZETTELKASTEN'
+alias tmux='tmux -2'
 
 _have vim && alias vi=vim
 
@@ -154,3 +156,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Set Vim Keybindings in Bash.
+set -o vi
